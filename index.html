@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharaiz Khan</title>
+    <link rel="icon" href="./assets/logo.png"/>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- RUBIK FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- ANIMATIONS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER WITH RESPONSIVE NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar navbar-dark bg-dark">
+        <div class="container">
+          <h2 class="brand">Sharaiz Khan</h2>
+          <button
+            class="navbar-toggler ml-auto custom-toggler"
+            data-toggle="collapse"
+            data-target="#navbarid"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse menu_list navigation"
+            id="navbarid"
+          >
+            <ul class="navbar-nav text-center ms-auto ">
+              <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="dropdown-header dd-hdr"></div>
+                  <li><a class="dropdown-item" href="#package">Pricing</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#faqs">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SECTION 1 COROSAL -->
+    <section class="section1"> 
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" >
+                <!-- COROUSEL ICONS -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <!-- CROUSEL ITEMS -->
+            <div class="carousel-inner" >
+              <!-- MAIN ITEM -->
+              <div class="carousel-item active" data-interval="7000" >
+                <img src="./assets/first.png" class="d-block crosimg " alt="...">
+                <!-- CATIONS -->
+                <div class="carousel-caption cap-text">
+                  <h5>HI I'M SHARAIZ KHAN</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                  <button class="btn c-btn ">GET IN TOUCH</button>
+                </div>
+              </div>
+              <!-- SECOND ITEM -->
+              <div class="carousel-item" data-interval="7000">
+                <img src="./assets/second.png" class="d-block crosimg"  alt="...">
+                <!-- CAPTION -->
+                <div class="carousel-caption cap-text">
+                  <h5>New Generation of<br/>Coders</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                  <!-- BUTTON -->
+                  <button class="btn c-btn ">GET IN TOUCH</button>
+                </div>
+              </div>
+            </div>
+            <!-- CONTROL BUTTONS -->
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section> 
+    
+    <!-- SECTION 2 SERVICES -->
+  <section class="section2" id="services">
+    <!-- HEADING WITH SUB HEADING -->
+      <div class="container" data-aos="fade-up" data-aos-duration="500">
+        <h4 id="service-head">SERVICES</h4>
+        <p id="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at delectus<br /> laudantium, deserunt, atque eveniet. Voluptatem, fuga quos rerum inventore.</p>
+      </div>
+  <div class="container">
+    <!-- FIRST ROW -->
+  <div class="row align-items-start serv-body">
+    <!-- FIRST COL -->
+    <div class="col-sm-4 col-12" data-aos="fade-up" data-aos-duration="500">
+      <i class="fas fa-laptop-code serv-icn"></i>
+      <h3 id="service-bhead">Front End</h3>
+      <p class="service-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.</p>
+    </div>
+
+        <!-- SECOND COL -->
+    <div class="col-sm-4 col-12" data-aos="fade-up" data-aos-duration="650">
+      <i class="fas fa-server serv-icn"></i>
+      <h3 id="service-bhead">Back End</h3>
+      <p class="service-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.</p>
+    </div>
+
+        <!-- THIRD COL -->
+    <div class="col-sm-4 col-12" data-aos="fade-up" data-aos-duration="800">
+      <i class="fab fa-searchengin serv-icn"></i>
+      <h3 id="service-bhead">Search Engine Optimization</h3>
+      <p class="service-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.</p>
+    </div>
+  </div>
+  
+
+    <!-- SECOND ROW -->
+    <div class="row align-items-start serv-body">
+      <!-- FIRST COL -->
+      <div class="col-sm-4 col-12" data-aos="fade-up" data-aos-duration="500">
+        <i class="fab fa-uikit serv-icn"></i>
+        <h3 id="service-bhead">User Interface</h3>
+        <p class="service-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.</p>
+      </div>
+      <!-- SECOND COL -->
+      <div class="col-sm-4 col-12" data-aos="fade-up" data-aos-duration="650">
+        <i class="fas fa-skating serv-icn"></i>
+        <h3 id="service-bhead">User Experience</h3>
+        <p class="service-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.</p>
+      </div>
+
+      <!-- THIRD COL -->
+      <div class="col-sm-4 col-12" data-aos="fade-up" data-aos-duration="800">
+        <i class="fas fa-laptop-house serv-icn"></i>
+        <h3 id="service-bhead">Cross Platform</h3>
+        <p class="service-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.</p>
+      </div>
+    
+  </div>
+  </div>
+    </section>
+  
+    <!-- SECTION 3 PREV WORK -->
+    <section class="section3" id="portfolio">
+      <!-- HEADING -->
+      <div class="mb-5" data-aos="fade-up" data-aos-duration="500">
+        <h4 id="service-head">PORTFOLIO</h4> 
+      </div>
+      <!-- USED OVERFLOW HIDDEN AS THERE IS A BUG WITH AOS LIBRARY THAT MESSES UP THE RESPONSIVENESS IF YOU USE FADE LEFT OR RIGHT -->
+      <div class="container overflow-hidden">
+        <!-- FIRST ROW -->
+        <div class="row">
+          <!-- FIRST COL OF IMG -->
+          <div class="col-sm" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./assets/first-website.png" class="webimg"  alt="...">
+          </div>
+          <!-- SECOND COL OF NAME AND DESCRIPTION -->
+          <div class="col-sm serv-m" data-aos="fade-left" data-aos-duration="1000">
+            <h4 id="web-head">V-EDS</h4>
+            <p class="web-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.
+            <br />Minus perspiciatis ullam itaque voluptas iure vero,<br /> nesciunt unde odit aspernatur distinctio,</p>
+          </div>
+        </div>
+        <!-- SECOND ROW -->
+          <div class="row">
+            <!-- FIRST COL OF IMG -->
+            <div class="col-sm" data-aos="fade-right" data-aos-duration="1000">
+              <img src="./assets/second-website.png" class="webimg"  alt="...">
+            </div>
+            <!-- SECOND COL OF NAME AND DESCRIPTION -->
+            <div class="col-sm serv-m" data-aos="fade-left" data-aos-duration="1000">
+              <h4 id="web-head">V-EDS</h4>
+              <p class="web-btext">Lorem ipsum dolor sit amet, consectetur <br/>adipisicing elit. Pariatur dolores voluptas <br/>obcaecati quo consequuntur mollitia facilis.
+              <br />Minus perspiciatis ullam itaque voluptas iure vero,<br /> nesciunt unde odit aspernatur distinctio,</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4  PACKAGES -->
+    <section class="section4" id="package">
+      <!-- HEADING AND DESCRIPTION -->
+      <div class="container" id="packages" data-aos="fade-up" data-aos-duration="500">
+        <h4 id="service-head">SEASON PRICING</h4>
+        <p id="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at delectus<br /> laudantium, deserunt, atque eveniet. Voluptatem, fuga quos rerum inventore.</p>
+      </div>
+      <!-- HERE A CONTAINER IS DIVIDED INTO ONE ROW THAT HAS 3 COLUMNS -->
+      <div class="container cont">
+        <div class="row">
+          <div class="col-sm ">
+            <div class="package-body" data-aos="fade-up" data-aos-duration="650">
+              <h6 class="package-head">BASIC</h6>
+              <h6 class="package-price">$47<span class="package-dur">/year</span></h6>
+              <div class="package-detail">
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <br />
+                <button class="pkg-buy-btn">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="package-body" data-aos="fade-up" data-aos-duration="800">
+              <h4 class="mx-5 package-head">PREMIUM</h4>
+              <h6 class="package-price">$200<span class="package-dur">/year</span></h6>
+              <div class="package-detail">
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <br />
+                <button id="prempkg-buy-btn">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="package-body" data-aos="fade-up" data-aos-duration="950">
+              <h4 class="mx-5 package-head">PROFESSIONAL</h4>
+              <h6 class="package-price">$750<span class="package-dur">/year</span></h6>
+              <div class="package-detail">
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <i class="fas fa-check icon"><span id="pkg-det-bdy">Officia quaerat eaque neque</span></i>
+                <button class="pkg-buy-btn">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 FAQS -->
+    <section class="section5" id="faqs">
+      <!-- HEADING -->
+      <div class="container"  data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
+        <h4 id="faq-head">FREQUENTLY ASKED QUESTIONS</h4>
+      </div>
+      <!-- HERE A CONTAINER HAS 3 ROWS AND EACH ROW HAS 1 ROW WHICH IS DIVIDED INTO 2 COLUMNS -->
+      <div class="container cont">
+        <!-- ROW 1 -->
+        <div class="row" data-aos="fade-up" data-aos-duration="500">
+          <div class="col-sm">
+            <h5 class="question">LOREM IPSUM?</h5>
+            <h6 class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Aliquam assumenda eum blanditiis perferendis.</h6>
+          </div>
+          <div class="col-sm">
+            <h5 class="question">LOREM IPSUM?</h5>
+            <h6 class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Aliquam assumenda eum blanditiis perferendis.</h6>
+          </div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="row" data-aos="fade-up" data-aos-duration="500">
+          <div class="col-sm">
+            <h5 class="question">LOREM IPSUM?</h5>
+            <h6 class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Aliquam assumenda eum blanditiis perferendis.</h6>
+          </div>
+          <div class="col-sm">
+            <h5 class="question">LOREM IPSUM?</h5>
+            <h6 class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Aliquam assumenda eum blanditiis perferendis.</h6>
+          </div>
+        </div>
+        <!-- ROW 3 -->
+        <div class="row"data-aos="fade-up" data-aos-duration="500">
+          <div class="col-sm">
+            <h5 class="question">LOREM IPSUM?</h5>
+            <h6 class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Aliquam assumenda eum blanditiis perferendis.</h6>
+          </div>
+          <div class="col-sm">
+            <h5 class="question">LOREM IPSUM?</h5>
+            <h6 class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Aliquam assumenda eum blanditiis perferendis.</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 CONTACT ME -->
+    <section class="section6" id="contact">
+      <!-- HEADING AND SUBHEADING -->
+      <div class="container" id="packages" data-aos="fade-up" data-aos-duration="500">
+        <p id="git-text">GET IN TOUCH</p>
+        <h4 id="contact-head">CONTACT ME</h4>
+      </div>
+      <!-- HERE WE HAVE A DIV THAT HAS 1 ROW OF 2 COLS, 1ST COL IS FURTHER DIVIDED 3 ROWS WHERE AS SECOND COL IS NORMAL ONE -->
+        <div class="container cont">
+          <!-- MAIN DIV -->
+          <div class="row">
+            <!-- FIRST COL -->
+            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="550">
+              <!-- FIRST ROW -->
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control contact-name-field" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control contact-name-field" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+
+              <!-- SECOND ROW -->
+              <div class="row">
+                <div class="col-12">
+                  <input type="email" class="form-control contact-emmsg-field" placeholder="Email@xyz.com" aria-label="Email">
+                </div>
+              </div>
+              
+              <!-- THIRD ROW -->
+              <div class="row">
+                <div class="col-12">
+                  <textarea class="form-control contact-emmsg-field" id="contact-msg-field" placeholder="Write your Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+              <!-- BUTTON -->
+              <div class="row send-msg">
+                <div class="col-12 col-md-6">
+                  <button type="button" class="btn">Send Message</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECOND COL -->
+            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="600">
+              <div class="container knw-more" id="packages">
+                <h4 id="know-more">NEED TO KNOW MORE ON <br />DETAILS. GET IN TOUCH</h4>
+                <p id="knm-text">Lorem ipsum dolor sit amet, consectetur <br />cadipisicing elit. Dolores, distinctio! Harum <br />quibusdam nisi, illum nulla aspernatur aut <br />quidem aperiam, quae non tempora <br />recusandae voluptatibus fugit impedit.</p>
+                <button type="button" class="btn">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <!-- HERE WE HAVE 1 ROW WHICH HAS 3 COLS, BUT THE THIRD COL FURTHER HAS 2 ROWS IN IT TO ACHIEVE RESPONSIVENESS :D-->
+      <div class="container ">
+        <div class="row f-container">
+          <!-- FIRST COL -->
+          <div class="col-12 col-md-4">
+            <h2 class="f-heads">About US</h2>
+            <p id="fabt-body">Lorem ipsum dolor sit amet consectetur <br/>adipisicing elit. Neque facere laudantium <br/>magnam voluptatum autem. Amet aliquid <br/>nesciunt veritatis aliquam.</p>
+          </div>
+          <!-- SECOND COL -->
+          <div class="col-12 col-md-4">
+            <h2 class="f-heads">Features</h2>
+            <ul class="f-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Terms of Services</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- THIRD COL -->
+          <div class="col col-md-4 sub-text">
+            <div class="row">
+              <!-- FIRST ROW -->
+              <div class="col-12">
+                <h2 class="f-heads">SUBSCRIBE TO NEWSLETTER</h2>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="Enter Email" aria-describedby="button-addon2">
+                  <button class="btn" type="button" id="button-addon2">Subscribe</button>
+                </div>
+              </div>
+              <!-- FIRST ROW -->
+              <div class="col-12">
+                <h2 class="f-heads">FOLLOW US</h2>
+                <div class="icons">
+                  <i id="fb-icon" class="fab fa-facebook-f"></i>
+                  <i id="tw-icon" class="fab fa-twitter"></i>
+                  <i id="ins-icon" class="fab fa-instagram"></i>
+                  <i id="li-icon" class="fab fa-linkedin-in"></i>
+                </div></div>
+            </div>
+
+          </div>
+          
+        </div>
+        <!-- TO CREATE A SIMPLE LINE -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+        <!-- CREDITS -->
+        <div class="credits">
+          Copyright ©2021 All rights reserved | Made By: Sharaiz Khan <br />Design By: Colorlib
+        </div>
+      </div>
+    </footer>
+
+    <!-- PERSONAL JS -->
+    <script src="./Js/index.js"></script>
+    <!-- BOOTSTRAP JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+  
+</html>
